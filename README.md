@@ -33,7 +33,7 @@ $$\Delta\text{RV}_{ijk} = \beta_0 + \beta_1 \text{Aggression}_{ijk} + \beta_2 \t
 Where:
 * $\text{Aggression}_{ijk}$: Context-standardized swing probability metric ($Z$-score).
 * $\text{ContactRate}_j$: Batter $j$'s underlying contact rate ($Z$-score).
-* $\mathbf{X}_{ijk}$: Vector of situational controls (Count state dummies, Platoon advantage, Hard-contact potential $\text{EV}_{95}$, Outs state, and Lagged $\Delta\text{RV}$).
+* $`\mathbf{X}_{ijk}`$: Vector of situational controls (Count state dummies, Platoon advantage, Hard-contact potential $`\text{EV}_{95}`$, Outs state, and Lagged $`\Delta\text{RV}`$).
 * $u_j \sim \mathcal{N}(0, \sigma^2_u)$: Random intercepts for **Batters** (~600 clusters).
 * $v_k \sim \mathcal{N}(0, \sigma^2_v)$: Random intercepts for **Pitchers** (~800 clusters).
 
