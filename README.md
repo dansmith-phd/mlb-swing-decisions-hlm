@@ -73,7 +73,7 @@ When swing aggression increases from $-2$ SD (passive) to $+2$ SD (highly aggres
 
 ```text
 ├── 01_scrape_full_2024_season.R    # Resilient Statcast API scraper (653k+ rows)
-├── 02_fit_hlm_model.R              # Feature engineering & glmmTMB model estimation
+├── 02_fit_glmmTMB_hlm.R            # Feature engineering & glmmTMB model estimation
 ├── 03_summary_and_visualization.R  # Marginal effects & high-res ggplot2 generation
 ├── interaction_plot.png            # Saved publication-ready graphic
 └── README.md                       # Project documentation
