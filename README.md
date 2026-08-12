@@ -1,6 +1,6 @@
 # ⚾ Context-Adjusted Swing Decisions & Hitter Contact Moderation
 
-> **A Cross-Classified Hierarchical Linear Model (HLM) evaluating pitch-level decision value ($\Delta\text{RV}$) across the 2024 MLB Regular Season (653,990 Pitches).**
+> **A Cross-Classified Hierarchical Linear Model (HLM) evaluating pitch-level decision value ($\Delta\text{RV}$) across the 2024 MLB Regular Season (653,990 Pitches). Please note: this is an unvalidated prototype.**
 
 ---
 
