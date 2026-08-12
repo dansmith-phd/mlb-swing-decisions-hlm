@@ -6,7 +6,7 @@
 
 ## 📌 Executive Summary
 
-Traditional swing-decision metrics evaluate plate discipline through strict spatial zones (e.g., Zone% vs. Chase%). However, an optimal swing decision is highly dependent on situational context and individual skill profiles. A high-contact hitter can profitably expand the zone, whereas a low-contact power hitter incurs a steep cost when swinging aggressively in fringe locations.
+Traditional swing-decision metrics evaluate plate discipline through strict spatial zones (e.g., Zone% vs. Chase%). However, an optimal swing decision depends heavily on situational context and individual skill profiles. A high-contact hitter can profitably expand the zone, whereas a low-contact power hitter incurs a steep cost when swinging aggressively in fringe locations.
 
 This project implements a **Cross-Classified Hierarchical Linear Model (HLM)** using C++ Template Model Builder (`glmmTMB`) to quantify:
 1. How **context-adjusted swing aggression** impacts pitch-level Delta Run Value ($\Delta\text{RV}$).
@@ -41,7 +41,7 @@ Where:
 
 ## 📊 Full Model Summary Table
 
-*Dataset: 2024 MLB Regular Season ($N = 653,990$ pitch observations)*
+*Dataset: 2024 MLB Regular Season ($`N = 653,990`$ pitch observations)*
 
 | Term | Estimate | Std. Error | Statistic ($z$) | $p$-value |
 | :--- | :---: | :---: | :---: | :---: |
@@ -65,7 +65,7 @@ Below is the marginal prediction curve generated from the cross-classified HLM:
 ![Interaction Plot](interaction_plot.png)
 
 ### Key Takeaway:
-When swing aggression increases from $-2$ SD (passive) to $+2$ SD (highly aggressive), **high-contact batters maintain a higher expected run value ceiling** compared to low-contact hitters, whose decision efficiency degrades significantly faster under aggressive expansion.
+When swing aggression increases from $-2$ SD (passive) to $+2$ SD (highly aggressive), high-contact batters maintain a higher expected run value ceiling compared to low-contact hitters, whose decision efficiency degrades faster under aggressive expansion. However, an important caveat is necessary: **this interaction is statistically significant** owing to the large sample size of 650k+ pitches, **but in practical terms, it reflects a very small difference** as seen in the above graph.
 
 ---
 
